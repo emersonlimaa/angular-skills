@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -14,11 +15,12 @@ export class CardComponent implements OnInit {
   }
 
   onLike(card: any){
-    // TODO: incrementar o like, salvar via rest
+    this.card.likes++
   }
 
   onShare(card: any){
-    // TODO: abrir o link do seu linkedin
+    const link = 'https://www.linkedin.com/in/emersonslima/';
+    window.open(link, '_blank');
   }
 
 }
