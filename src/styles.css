@@ -1,2 +1,13 @@
 /* Add application styles & imports to this file! */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #212B38;
+}
