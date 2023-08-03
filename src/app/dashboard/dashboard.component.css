@@ -1,0 +1,8 @@
+.dashboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

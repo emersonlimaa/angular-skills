@@ -1,2 +1,7 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
-<app-card [card]="card" *ngFor="let card of cards"></app-card>
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<div *ngIf="!isLoading" class="dashboard">
+  <!-- Lógica para exibir os cards após o carregamento -->
+  <app-card [card]="card" *ngFor="let card of cards"></app-card>
+</div>
